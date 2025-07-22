@@ -76,14 +76,18 @@ Click badges to open notebooks in Google Colab:
 
 ### Run application locally
 
+Clone repo
 ```bash
-# Clone repo
 git clone https://github.com/aaronhuxley07/001225876-FYP_Code.git
 cd 001225876-FYP_Code
+'''
 
-# Install dependencies
+Install dependencies
+```bash
 pip install -r requirements.txt
+'''
 
-# Launch Streamlit app
+Launch Streamlit app
+```bash
 streamlit run crypto_fraud_detection.py
 '''
