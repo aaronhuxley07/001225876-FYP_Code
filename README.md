@@ -67,14 +67,14 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 
 ## Run Instructions
 
-### Option 1: Run notebooks in Google Colab
+### Run notebooks in Google Colab
 
 Click badges to open notebooks in Google Colab:
 
 - [![Open ML Pipeline](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aaronhuxley07/001225876-FYP_Code/blob/main/notebooks/machine_learning_pipeline.ipynb)
 - [![Open Sample Creator](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aaronhuxley07/001225876-FYP_Code/blob/main/notebooks/sample_dataset_creator.ipynb)
 
-### Option 2: Run locally
+### Run application locally
 
 ```bash
 # Clone repo
