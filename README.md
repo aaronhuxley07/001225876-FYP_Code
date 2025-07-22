@@ -15,7 +15,8 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 
 ```
 001225876-FYP_Code/
-├── crypto_fraud_detection.py               # Streamlit app for model deployment and SHAP explanation
+├── application/
+│   ├── main.py               # Streamlit app for model deployment and SHAP explanation
 ├── notebooks/
 │   ├── machine_learning_pipeline.ipynb     # Preprocessing, training, fine-tuning, evaluation
 │   └── sample_dataset_creator.ipynb        # Creates sample datasets for web testing
@@ -104,5 +105,6 @@ pip install -r requirements.txt
 
 Launch Streamlit app
 ```bash
-streamlit run crypto_fraud_detection.py
+source venv/bin/activate
+python -m streamlit application/main.py
 ```
