@@ -80,14 +80,14 @@ Clone repo
 ```bash
 git clone https://github.com/aaronhuxley07/001225876-FYP_Code.git
 cd 001225876-FYP_Code
-'''
+```
 
 Install dependencies
 ```bash
 pip install -r requirements.txt
-'''
+```
 
 Launch Streamlit app
 ```bash
 streamlit run crypto_fraud_detection.py
-'''
+```
