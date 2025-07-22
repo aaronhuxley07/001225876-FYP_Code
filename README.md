@@ -11,7 +11,7 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 001225876-FYP_Code/
@@ -51,7 +51,7 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 
 ---
 
-## 🖥️ Streamlit Web App
+## Streamlit Web App
 
 ### `crypto_fraud_detection.py`
 - Loads the trained `model.pkl` and `explainer.pkl`
@@ -65,7 +65,7 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 
 ---
 
-## ▶️ Run Instructions
+## Run Instructions
 
 ### Option 1: Run notebooks in Google Colab
 
