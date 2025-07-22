@@ -23,8 +23,8 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 │   ├── machine_learning_pipeline.pdf
 │   └── sample_dataset_creator.pdf
 ├── datasets/
-│   ├── elliptic_txs_classes.csv
-│   ├── elliptic_txs_features.csv
+│   ├── elliptic_txs_classes.csv             Need to be downloaded from https://www.kaggle.com/datasets/ellipticco/elliptic-data-set due to GitHub file size limits
+│   ├── elliptic_txs_features.csv           # Need to be downloaded from https://www.kaggle.com/datasets/ellipticco/elliptic-data-set due to GitHub file size limits
 │   └── sample_dataset_1.csv, sample_dataset_2.csv, ...
 ├── models/
 │   ├── model.pkl                           # Trained ML model
@@ -66,6 +66,21 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 ---
 
 ## Run Instructions
+
+### 📊 Dataset Info
+
+The original Elliptic dataset used in this project is publicly available on Kaggle:
+
+[Elliptic Dataset on Kaggle](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set)
+
+Please download the following files from the Kaggle page and place them in the `datasets/` folder before running the notebooks or app:
+
+- `elliptic_txs_classes.csv`
+- `elliptic_txs_features.csv`
+
+---
+
+For convenience, sample smaller datasets used for testing the deployed Streamlit app are included in this repository under the `datasets/` folder.
 
 ### Run notebooks in Google Colab
 
