@@ -13,23 +13,25 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 
 ## 📁 Project Structure
 
+```
 001225876-FYP_Code/
-├── crypto_fraud_detection.py                # Streamlit app for model deployment and SHAP explanation
+├── crypto_fraud_detection.py               # Streamlit app for model deployment and SHAP explanation
 ├── notebooks/
-│   ├── machine_learning_pipeline.ipynb      # Preprocessing, training, fine-tuning, evaluation
-│   └── sample_dataset_creator.ipynb         # Creates sample datasets for web testing
+│   ├── machine_learning_pipeline.ipynb     # Preprocessing, training, fine-tuning, evaluation
+│   └── sample_dataset_creator.ipynb        # Creates sample datasets for web testing
 ├── pdfs_of_notebooks/
 │   ├── machine_learning_pipeline.pdf
 │   └── sample_dataset_creator.pdf
 ├── datasets/
 │   ├── elliptic_txs_classes.csv
 │   ├── elliptic_txs_features.csv
-│   └── sample_dataset_1.csv, sample_dataset_2.csv, …
+│   └── sample_dataset_1.csv, sample_dataset_2.csv, ...
 ├── models/
-│   ├── model.pkl                            # Trained ML model
-│   └── explainer.pkl                        # SHAP explainer object
+│   ├── model.pkl                           # Trained ML model
+│   └── explainer.pkl                       # SHAP explainer object
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
