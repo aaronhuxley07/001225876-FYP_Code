@@ -1,5 +1,5 @@
 **Project Title:** Cryptocurrency Fraud Detection using Machine Learning and Explainable AI (XAI)  
-**Name:** Aaron [Your Surname]  
+**Name:** Aaron Huxley Temcykumar
 **Student ID:** 001225876  
 **Repository:** 001225876-FYP_Code  
 
