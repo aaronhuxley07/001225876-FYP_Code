@@ -23,7 +23,7 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 │   ├── machine_learning_pipeline.pdf
 │   └── sample_dataset_creator.pdf
 ├── datasets/
-│   ├── elliptic_txs_classes.csv             Need to be downloaded from https://www.kaggle.com/datasets/ellipticco/elliptic-data-set due to GitHub file size limits
+│   ├── elliptic_txs_classes.csv            # Need to be downloaded from https://www.kaggle.com/datasets/ellipticco/elliptic-data-set due to GitHub file size limits
 │   ├── elliptic_txs_features.csv           # Need to be downloaded from https://www.kaggle.com/datasets/ellipticco/elliptic-data-set due to GitHub file size limits
 │   └── sample_dataset_1.csv, sample_dataset_2.csv, ...
 ├── models/
