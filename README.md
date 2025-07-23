@@ -71,21 +71,6 @@ This project aims to detect fraudulent cryptocurrency transactions using machine
 
 ## Run Instructions
 
-### 📊 Dataset Info
-
-The original Elliptic dataset used in this project is publicly available on Kaggle:
-
-[Elliptic Dataset on Kaggle](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set)
-
-Please download the following files from the Kaggle page and place them in the `datasets/` folder before running the notebooks or app:
-
-- `elliptic_txs_classes.csv`
-- `elliptic_txs_features.csv`
-
----
-
-For convenience, sample smaller datasets used for testing the deployed Streamlit app are included in this repository under the `datasets/` folder.
-
 ### Run notebooks in Google Colab
 
 Click badges to open notebooks in Google Colab:
@@ -93,6 +78,15 @@ Click badges to open notebooks in Google Colab:
 - [![Open ML Pipeline](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aaronhuxley07/001225876-FYP_Code/blob/main/notebooks/machine_learning_pipeline.ipynb)
 - [![Open Sample Creator](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aaronhuxley07/001225876-FYP_Code/blob/main/notebooks/sample_dataset_creator.ipynb)
 
+The original Elliptic dataset used in this project is publicly available on Kaggle:
+
+[Elliptic Dataset on Kaggle](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set)
+
+Please download the following files from the Kaggle page and place them in the `datasets/` folder of the notebook before running:
+
+- `elliptic_txs_classes.csv`
+- `elliptic_txs_features.csv`
+  
 ### Run application locally
 
 Clone repo
@@ -111,3 +105,8 @@ Launch Streamlit app
 source venv/bin/activate
 python -m run streamlit application/main.py
 ```
+
+Test Streamlit app
+
+Drag and drop a sample dataset included in this repository (e.g. titled 'sample_deployment_data.csv') under the `datasets/` folder.
+
