@@ -17,7 +17,7 @@ class PredictionModel:
     def _load_explainer(self):
         booster = xgb.Booster()
         booster.load_model("models/explainer.json")
-        return shap.TreeExplainer(booster)
+        return shap.TreeExplainer(booster, model_output="raw")
         
     def preprocess(self, df):
         original_columns = df.columns.tolist()
