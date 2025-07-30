@@ -11,7 +11,7 @@ pillow~=11.3.0
 pip~=23.2.1
 attrs~=25.3.0
 wheel~=0.41.2
-protobuf~=6.31.1
+protobuf==3.20.3
 tornado~=6.5.1
 Jinja2~=3.1.6
 pytz~=2025.2
@@ -19,15 +19,15 @@ scipy~=1.11.0
 typing_extensions~=4.14.1
 packaging~=25.0
 scikit-learn~=1.7.1
-shap~=0.48.0
-numba~=0.61.2
+shap==0.41.0
+numba==0.56.4
 tqdm~=4.67.1
 slicer~=0.0.8
 cloudpickle~=3.1.1
 toml~=0.10.2
 requests~=2.32.4
 smmap~=5.0.2
-llvmlite~=0.44.0
+llvmlite==0.39.1
 setuptools~=68.2.0
 charset-normalizer~=3.4.2
 threadpoolctl~=3.6.0
