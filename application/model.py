@@ -2,6 +2,7 @@ import xgboost as xgb
 import shap
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
+import joblib
 
 NUM_FEATURES = 165
 
@@ -11,13 +12,9 @@ class PredictionModel:
         self.explainer = self._load_explainer()
 
     def _load_model(self):
-        # Load Booster from JSON file
-        booster = xgb.Booster()
-        booster.load_model("models/model.json")
-        return booster
+        return joblib.load("models/model.pkl")
 
     def _load_explainer(self):
-        # Dynamically create TreeExplainer
         return shap.TreeExplainer(self.model)
 
     def preprocess(self, df):
