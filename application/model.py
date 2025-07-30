@@ -18,7 +18,7 @@ class PredictionModel:
         booster = xgb.Booster()
         booster.load_model("models/explainer.json")
         return shap.TreeExplainer(booster, model_output="raw")
-        
+
     def preprocess(self, df):
         original_columns = df.columns.tolist()
         if len(original_columns) < 2:
@@ -43,7 +43,6 @@ class PredictionModel:
         return df_scaled, original_id, dropped_col, dropped_name, None
 
     def predict(self, df_input):
-        # Booster requires DMatrix for prediction
         dmatrix = xgb.DMatrix(df_input.drop(columns=["txID"]))
         return self.model.predict(dmatrix)
 
