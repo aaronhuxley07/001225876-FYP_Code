@@ -2,7 +2,7 @@ import xgboost as xgb
 import shap
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
-import joblib
+from joblib import load
 
 NUM_FEATURES = 165
 
@@ -12,11 +12,12 @@ class PredictionModel:
         self.explainer = self._load_explainer()
 
     def _load_model(self):
-        return joblib.load("models/model.pkl")
+        return load("models/model.pkl")
 
     def _load_explainer(self):
-        return shap.TreeExplainer(self.model)
-
+        shap_model = load("models/explainer.pkl")
+        return shap.TreeExplainer(shap_model)
+        
     def preprocess(self, df):
         original_columns = df.columns.tolist()
         if len(original_columns) < 2:
