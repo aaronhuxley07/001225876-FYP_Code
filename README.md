@@ -104,7 +104,7 @@ Launch Streamlit app
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-python -m run streamlit application/main.py
+streamlit run application/main.py
 ```
 
 Test Streamlit app
