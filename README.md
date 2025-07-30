@@ -111,3 +111,4 @@ Test Streamlit app
 
 Drag and drop a sample dataset included in this repository (e.g. titled 'sample_deployment_data.csv') under the `datasets/` folder.
 
+Edit: Installing Python 3.11 gets rid of any errors when running the application throguh terminal
