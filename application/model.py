@@ -1,8 +1,6 @@
-import xgboost as xgb
-import shap
-import pandas as pd
+import pickle
+import pandas
 from sklearn.preprocessing import MinMaxScaler
-from joblib import load
 
 NUM_FEATURES = 165
 
@@ -12,12 +10,12 @@ class PredictionModel:
         self.explainer = self._load_explainer()
 
     def _load_model(self):
-        return load("models/model.pkl")
+        with open("models/model.pkl", "rb") as f:
+            return pickle.load(f)
 
     def _load_explainer(self):
-        booster = xgb.Booster()
-        booster.load_model("models/explainer.json")
-        return shap.TreeExplainer(booster, model_output="raw")
+        with open("models/explainer.pkl", "rb") as f:
+            return pickle.load(f)
 
     def preprocess(self, df):
         original_columns = df.columns.tolist()
@@ -43,11 +41,10 @@ class PredictionModel:
         return df_scaled, original_id, dropped_col, dropped_name, None
 
     def predict(self, df_input):
-        dmatrix = xgb.DMatrix(df_input.drop(columns=["txID"]))
-        return self.model.predict(dmatrix)
+        return self.model.predict(df_input)
 
     def explain(self, df_input):
-        return self.explainer(df_input.drop(columns=["txID"]))
+        return self.explainer(df_input)
 
     def attach_predictions(self, df_scaled, predictions, original_id, dropped_col, dropped_name):
         df_with_predictions = df_scaled.copy()
